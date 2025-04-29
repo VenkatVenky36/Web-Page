@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Save this file as about-us.html -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background-color: white;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background-color: #6d2d6d;
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .user-info {
+            display: flex;
+            align-items: center;
+        }
+        
+        .profile-pic {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            border: 2px solid white;
+        }
+        
+        .welcome {
+            font-size: 12px;
+        }
+        
+        .user-name {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .bell-icon {
+            font-size: 20px;
+        }
+        
+        .page-title {
+            padding: 15px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        
+        .feature-image-container {
+            padding: 5%;
+            width: 100%;
+            height: auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-image {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+        
+        .content {
+            padding: 20px;
+            line-height: 1.6;
+            font-size: 15px;
+            color: #333;
+        }
+        
+        .nav-bar {
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+            border-top: 1px solid #eee;
+            background-color: white;
+        }
+        
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+            color: #777;
+        }
+        
+        .nav-icon {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        
+        .nav-icon i {
+            font-size: 18px;
+            color: inherit;
+        }
+        
+        .active {
+            color: #6d2d6d;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 380px) {
+            .content {
+                padding: 15px;
+                font-size: 14px;
+            }
+            
+            .nav-item {
+                font-size: 10px;
+            }
+            
+            .page-title {
+                font-size: 20px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .container {
+                max-width: 500px;
+            }
+            
+            .content {
+                padding: 25px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="user-info">
+                <img src="./image.jpg" alt="Profile" class="profile-pic">
+                <div>
+                    <div class="welcome">Hello, Welcome ✦</div>
+                    <div class="user-name">John Weak</div>
+                </div>
+            </div>
+            <div class="bell-icon">🔔</div>
+        </div>
+        
+        <div class="page-title">About Us</div>
+        
+        <div class="feature-image-container">
+            <img src="./image.jpg" alt="Business professional in blue suit" class="feature-image">
+        </div>
+        
+        <div class="content">
+            <p>
+                We are a team of dedicated professionals driven by creativity, innovation, and a passion for exceptional design. With years of experience in digital application and website design, we specialize in transforming ideas into captivating digital experiences that balance between functionality and aesthetics. Our approach is centered on understanding the unique needs of each client, ensuring every project we undertake not only aligns with their vision but also elevates their brand in the digital space.
+            </p>
+            <br>
+            <p>
+                At the core of our work is our mastery of modern design tools like Figma, which allows us to bring concepts to life with precision and style. We take pride in crafting user-centric designs that are intuitive, visually appealing, and optimized for performance. From creating sleek mobile applications to developing impactful websites, we aim to deliver solutions that resonate with users and stand out.
+            </p>
+        </div>
+        
+        <div class="nav-bar">
+            <a href="#" class="nav-item">
+                <div class="nav-icon"><i class="fa-solid fa-house"></i></div>
+                <div>Home</div>
+            </a>
+            <a href="#" class="nav-item">
+                <div class="nav-icon"><i class="fa-solid fa-file"></i></div>
+                <div>Companies</div>
+            </a>
+            <a href="#" class="nav-item active">
+                <div class="nav-icon"><i class="fa-solid fa-hand-holding-hand"></i></div>
+                <div>Eligibility</div>
+            </a>
+            <a href="#" class="nav-item">
+                <div class="nav-icon"><i class="fa-solid fa-arrows-to-dot"></i></div>
+                <div>Resource</div>
+            </a>
+            <a href="./contact-us-page.html" class="nav-item">
+                <div class="nav-icon"><i class="fa-solid fa-calendar"></i></div>
+                <div>Reminder</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
